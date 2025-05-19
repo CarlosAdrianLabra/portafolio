@@ -1,8 +1,15 @@
 
-export const Botones = () => {
+export const Botones = ({ texto = "Descargar CV", onClick }) => {
   return (
-    <button className="bg-blue-500 text-white hover:bg-white hover:text-blue-500 hover:border-blue-500 hover:border-1 font-bold py-2 px-4 rounded transition-colors">
-        Descargar CV
+    <button className="bg-accent-blue text-primario-bglight
+      hover:bg-primario-bglight
+      hover:text-accent-blue
+      hover:border-accent-blue  
+      border border-transparent
+      font-inter font-semibold text-btn         
+      py-2 px-4 rounded transition-colors duration-200"
+      onClick={onClick}>
+        {texto}
     </button>
   )
 }
