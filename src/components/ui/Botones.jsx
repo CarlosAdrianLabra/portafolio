@@ -7,7 +7,9 @@ export const Botones = ({ texto = "Descargar CV", onClick }) => {
       hover:border-accent-blue  
       border border-transparent
       font-inter font-semibold text-btn         
-      py-2 px-4 rounded transition-colors duration-200"
+      py-2 px-4 rounded-lg transition-colors duration-200
+      w-full
+      h-full"
       onClick={onClick}>
         {texto}
     </button>
