@@ -10,7 +10,6 @@ export const Navbar = () => {
             max-w-[1130px]
             mx-auto
             h-full
-            border-b-1
             content-center
             flex
             items-center
@@ -18,11 +17,19 @@ export const Navbar = () => {
             
         ">
             <img src="src\assets\Logoblanco.png"/>
-            <div className="grid grid-cols-4 content-center ">
-                <p>Sobre mi</p>
-                <p>Proyectos</p>
-                <p>Contacto</p>
-                <p>Experiencia</p>
+            <div className="grid grid-cols-4 content-center">
+                <p className="
+                    font-inter font-semibold text-descripciondelproyecto text-text90 mx-2
+                ">Sobre mi</p>
+                <p className="
+                    font-inter font-semibold text-descripciondelproyecto text-text90 mx-2
+                ">Proyectos</p>
+                <p className="
+                    font-inter font-semibold text-descripciondelproyecto text-text90 mx-2
+                ">Contacto</p>
+                <p className="
+                    font-inter font-semibold text-descripciondelproyecto text-text90 mx-2
+                ">Experiencia</p>
             </div>
         </div>
     </div>
