@@ -9,10 +9,15 @@ import { Form } from './components/composite/Form'
 import { Navbar } from './components/layout/Navbar'
 import { TarjetaExperiencia } from './components/composite/TarjetaExperiencia'
 import { SobreMi } from './components/composite/SobreMi'
+import { TarjetaSobreMiFoto } from './components/composite/TarjetaSobreMiFoto'
+import { TarjetaContacto } from './components/composite/TarjetaContacto'
+import { Experience } from './pages/Experience'
+import { Contact } from './pages/Contact'
+import { About } from './pages/About'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <SobreMi/>
+    <About/>
   </StrictMode>,
 )

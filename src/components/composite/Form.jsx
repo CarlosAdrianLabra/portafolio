@@ -4,7 +4,7 @@ import { Botones } from '../ui/Botones'
 export const Form = () => {
   return (
     <div className='
-        g-white
+        bg-white
         rounded-lg
         shadow-lg
         p-6

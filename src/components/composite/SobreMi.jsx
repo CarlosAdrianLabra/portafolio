@@ -5,6 +5,7 @@ export const SobreMi = () => {
         className="
             bg-white
             shadow-lg
+            rounded-[15px]
             max-w-[1140px]
             max-h-[390px]
             mx-auto
