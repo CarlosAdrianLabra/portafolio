@@ -7,21 +7,22 @@ export const TarjetaProyecto = () => {
         bg-white
         rounded-lg
         shadow-lg
+        break-inside-avoid
         p-5
         max-w-[325px]
         max-h-[411px]
+        mb-10
     '>
         
-        <img src='https://placehold.co/272x180.png'/>
+        <img src='https://placehold.co/272x180.png' className='mb-6'/>
         <h1 className='
         font-inter font-medium text-tituloproyecto text-text90
-        mt-6
         max-w-[272px]
         '>Proyecto 1</h1>
         <p className='
         font inter font-regular text-descripciondelproyecto text-text90
         mt-1
-        max-w-[272px]
+        max-w-[300px]
         line-clamp-3
         text-sm/6
         '>Descripcion breve del proyecto aqui, para que sepan de que es.</p>
@@ -29,7 +30,7 @@ export const TarjetaProyecto = () => {
         <CajaTecnologia Tecnologia="React"/>
         <CajaTecnologia Tecnologia="Javascript"/>
         <CajaTecnologia Tecnologia="AWS"/>
-
+        
         </div>
         
     

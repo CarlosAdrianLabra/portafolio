@@ -14,10 +14,12 @@ import { TarjetaContacto } from './components/composite/TarjetaContacto'
 import { Experience } from './pages/Experience'
 import { Contact } from './pages/Contact'
 import { About } from './pages/About'
+import { Projects } from './pages/Projects'
+import { Project } from './pages/Project'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <About/>
+    <Project/>
   </StrictMode>,
 )
