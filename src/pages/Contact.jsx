@@ -7,13 +7,14 @@ export const Contact = () => {
      <div className="
           bg-primario-bglight
           h-lvh">
-            <Navbar/>
+           {/*  <Navbar/> */}
             <div className="
                 max-w-[1140px]
                 mx-auto
-                pb-15">
+                pb-15
+                pt-10">
                 <h1 className="
-                    font-inter font-semibold text-hero text-text90 mt-10
+                    font-inter font-semibold text-hero text-text90 
                 ">Trabajemos juntos.</h1>
                 <p className="
                     font-inter font-regular text-tituloproyecto text-text90

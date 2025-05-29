@@ -11,7 +11,7 @@ export const Home = () => {
       bg-primario-bglight
       h-full
     ">
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="
         max-w-[1140px]
         mx-auto

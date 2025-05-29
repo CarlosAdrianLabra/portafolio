@@ -5,13 +5,14 @@ export const Project = () => {
     <div className="
         bg-primario-bglight
         h-full">
-        <Navbar/>
+        {/* <Navbar/> */}
         <div className="
             max-w-[1140px]
             mx-auto
-            pb-15">
+            pb-15
+            pt-10">
             <h1 className="
-            font-inter font-semibold text-hero text-text90 mt-10
+            font-inter font-semibold text-hero text-text90 
             ">Proyecto 1</h1>
             <p className="
             font-inter font-regular text-tituloproyecto text-text90

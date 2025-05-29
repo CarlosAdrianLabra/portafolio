@@ -7,16 +7,17 @@ export const About = () => {
      <div className="
               bg-primario-bglight
               h-lvh">
-                <Navbar/>
+                {/* <Navbar/> */}
                 <div className="
                     max-w-[1140px]
                     mx-auto
-                    pb-15">
+                    pb-15
+                    pt-10">
                       <div className="
                         grid
                         grid-cols-2
                         items-center
-                        mt-10
+                        
                       ">
                         <div className="
                           max-w-[605px]

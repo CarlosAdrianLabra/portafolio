@@ -1,3 +1,5 @@
+import { NavLink } from "react-router"
+
 export const Navbar = () => {
   return (
     <div className="
@@ -16,20 +18,24 @@ export const Navbar = () => {
             justify-between
             
         ">
-            <img src="src\assets\Logoblanco.png"/>
+            <NavLink to={"/"}><img src="src\assets\Logoblanco.png"/></NavLink>
             <div className="grid grid-cols-4 content-center">
+                <NavLink to={"/about"}>
                 <p className="
                     font-inter font-semibold text-descripciondelproyecto text-text90 mx-2
-                ">Sobre mi</p>
+                ">Sobre mi</p></NavLink>
+                <NavLink to={"/projects"}>
                 <p className="
                     font-inter font-semibold text-descripciondelproyecto text-text90 mx-2
-                ">Proyectos</p>
+                ">Proyectos</p></NavLink>
+                <NavLink to={"/contact"}>
                 <p className="
                     font-inter font-semibold text-descripciondelproyecto text-text90 mx-2
-                ">Contacto</p>
+                ">Contacto</p></NavLink>
+                <NavLink to={"/experience"}>
                 <p className="
                     font-inter font-semibold text-descripciondelproyecto text-text90 mx-2
-                ">Experiencia</p>
+                ">Experiencia</p></NavLink>
             </div>
         </div>
     </div>
