@@ -1,6 +1,7 @@
 import { TarjetaProyecto } from "../components/composite/TarjetaProyecto"
 import { TarjetaProyecto2 } from "../components/composite/TarjetaProyecto2"
 import { Navbar } from "../components/layout/Navbar"
+import projects from "../data/projects.json";
 
 export const Projects = () => {
   return (
@@ -23,20 +24,9 @@ export const Projects = () => {
                     pt-20
                     columns-1 sm:columns-2 md:columns-3 gap-6
                 ">
-                    <TarjetaProyecto/>
-                    <TarjetaProyecto2/>
-                    <TarjetaProyecto/>
-                    <TarjetaProyecto/>
-                    <TarjetaProyecto2/>
-                    <TarjetaProyecto2/>
-                    <TarjetaProyecto2/>
-                    <TarjetaProyecto/>
-                    <TarjetaProyecto/>
-                    <TarjetaProyecto2/>
-                    <TarjetaProyecto2/>
-                    <TarjetaProyecto/>
-                    <TarjetaProyecto/>
-                    <TarjetaProyecto2/>
+                    {projects.map((p) => (
+          <TarjetaProyecto key={p.id} project={p} />
+        ))}
                     
                 </div>
             </div>

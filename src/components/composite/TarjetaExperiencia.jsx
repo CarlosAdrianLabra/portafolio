@@ -1,5 +1,15 @@
 
-export const TarjetaExperiencia = () => {
+export const TarjetaExperiencia = ({ exp }) => {
+    if (!exp) return null;   
+
+    const {
+    role,
+    period,              // "Jun 2024 – Presente"
+    companyLogo,         // "/img/konfront-logo.png" o URL externa
+    highlights,          // array de strings
+    stackLogos           // array de URLs (máx 6 para tu grid)
+  } = exp;
+
   return (
     <div className="
         bg-white
@@ -20,20 +30,18 @@ export const TarjetaExperiencia = () => {
             max-w-[600px]
             ">
                 <h1 className="
-                    font-inter font-medium text-btn text-text90
-                ">Lider tecnico</h1>
+                    font-inter font-medium text-btn text-text90 pt-2
+                ">{role}</h1>
                 <p className="
                     font-inter font-regular text-descripciondelproyecto text-text90
-                ">Jun 2024 - Presente</p>
+                ">{period}</p>
                 <ul className="
                     list-inside list-disc ms-4
                     font-inter font-regular text-descripciondelproyecto text-text90
                 ">
-                    <li>esta es una lista</li>
-                    <li>esta es una lista</li>
-                    <li>esta es una lista</li>
-                    <li>esta es una lista</li>
-                    <li>esta es una lista</li>
+                    {highlights.map((h) => (
+                        <li key={h}>{h}</li>
+                        ))}
                     
                     
                     

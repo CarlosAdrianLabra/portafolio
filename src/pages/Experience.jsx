@@ -1,6 +1,7 @@
 import { TarjetaExperiencia } from "../components/composite/TarjetaExperiencia"
 import { Navbar } from "../components/layout/Navbar"
 import { Botones } from "../components/ui/Botones"
+import experiences from "../data/experience.json";
 
 
 export const Experience = () => {
@@ -28,17 +29,19 @@ export const Experience = () => {
                 pt-10 pr-10 pb-10
                 mt-10
             ">
-                <TarjetaExperiencia/>
-                <TarjetaExperiencia/>
-                <TarjetaExperiencia/>
-                <TarjetaExperiencia/>
+                {
+                    experiences.map((exp) => ( <TarjetaExperiencia key={exp.id} exp={exp} />))
+                }
                 <div className="
                     w-[217px]
                     h-[60px]
                     justify-self-center
                     mt-5
                 ">
-                    <Botones/>
+                    <a href="/Carlos_Adrián_Labra_Granados_CV.pdf" download>
+                        <Botones/>
+                    </a>
+                    
                 </div>
 
             </div>

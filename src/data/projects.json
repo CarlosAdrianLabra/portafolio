@@ -1,0 +1,53 @@
+[
+  {
+    "id": "moodforkfood",
+    "title": "MoodForkFood",
+    "year": 2024,
+    "role": "Full-stack No-Code Dev",
+    "short":"Esta es una descripcion corta",
+    "image": "https://placehold.co/600x400?text=MFF",
+    "keyMetrics": [
+      "30 % ↑ en interacciones IG → app",
+      "2 000 usuarios activos/mes",
+      "USD 12 K GMV en 3 meses"
+    ],
+    "problem": "La creadora no podía monetizar las recomendaciones…",
+    "solution": "Marketplace + feed con sentiment-analysis y pagos Stripe.",
+    "challenges": [
+      "Sincronizar posts IG → app casi en tiempo real",
+      "Escalar la DB sin sobrecostos en Bubble"
+    ],
+    "responsibilities": [
+      "Arquitectura Bubble y UI",
+      "Integración AWS Comprehend",
+      "Webhooks Stripe + CRM"
+    ],
+    "technologies": ["Bubble.io", "AWS", "Stripe", "PostgreSQL"]
+  },
+   {
+    "id": "moodforkfood2",
+    "title": "MoodForkFood",
+    "year": 2024,
+    "role": "Full-stack No-Code Dev",
+    "short":"Esta es una descripcion corta",
+    "image": "https://placehold.co/600x400?text=MFF",
+    "keyMetrics": [
+      "30 % ↑ en interacciones IG → app",
+      "2 000 usuarios activos/mes",
+      "USD 12 K GMV en 3 meses"
+    ],
+    "problem": "La creadora no podía monetizar las recomendaciones…",
+    "solution": "Marketplace + feed con sentiment-analysis y pagos Stripe.",
+    "challenges": [
+      "Sincronizar posts IG → app casi en tiempo real",
+      "Escalar la DB sin sobrecostos en Bubble"
+    ],
+    "responsibilities": [
+      "Arquitectura Bubble y UI",
+      "Integración AWS Comprehend",
+      "Webhooks Stripe + CRM"
+    ],
+    "technologies": ["Bubble.io", "AWS", "Stripe", "PostgreSQL"]
+  }
+  
+]

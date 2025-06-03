@@ -4,8 +4,24 @@ import { TarjetaProyecto } from "../components/composite/TarjetaProyecto"
 import { TarjetaSobreMiFoto } from "../components/composite/TarjetaSobreMiFoto"
 import { Navbar } from "../components/layout/Navbar"
 import { Botones } from "../components/ui/Botones"
+import projects from "../data/projects.json";
+import { useMemo } from "react";
 
 export const Home = () => {
+
+    // Se ejecuta sólo la primera vez que Home se monta
+  const randomProjects = useMemo(() => {
+    const copy = [...projects];
+
+    // Fisher–Yates shuffle light
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+
+    return copy.slice(0, 3);         // ← 3 proyectos
+  }, []);
+
   return (
     <div className="
       bg-primario-bglight
@@ -45,7 +61,9 @@ export const Home = () => {
               w-[217px]
               h-[60px]
             ">
-              <Botones/>
+              <a href="/Carlos_Adrián_Labra_Granados_CV.pdf" download>
+                        <Botones/>
+                    </a>
             </div>
             
           </div>
@@ -70,9 +88,10 @@ export const Home = () => {
             grid-cols-3
             
             justify-items-center">
-              <TarjetaProyecto/>
-              <TarjetaProyecto/>
-              <TarjetaProyecto/>
+              {randomProjects.map((p) => (
+            <TarjetaProyecto key={p.id} project={p} />
+          ))}
+        
 
           </div>
         </div>

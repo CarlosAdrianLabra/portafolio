@@ -1,6 +1,27 @@
 import { Navbar } from "../components/layout/Navbar"
+import { useParams, Navigate } from "react-router";
+import projects from "../data/projects.json";
 
 export const Project = () => {
+
+    const { id } = useParams();
+    const project = projects.find((p) => p.id === id);
+    if (!project) return <Navigate to="/projects" />;
+
+    const {
+        title,
+        short,
+        image,
+        year,
+        role,
+        keyMetrics,
+        problem,
+        solution,
+        challenges,
+        responsibilities,
+        technologies,
+    } = project;
+
   return (
     <div className="
         bg-primario-bglight
@@ -13,15 +34,15 @@ export const Project = () => {
             pt-10">
             <h1 className="
             font-inter font-semibold text-hero text-text90 
-            ">Proyecto 1</h1>
+            ">{title}</h1>
             <p className="
             font-inter font-regular text-tituloproyecto text-text90
-            ">Descripcion corta del proyecto</p>
+            ">{short}</p>
                 <div className="grid grid-cols-1 sm:grid-cols-3
                                 gap-5 mt-10
                                 grid-flow-row-dense ">
                     <div className="col-span-2 row-span-2">
-                        <img src="https://placehold.co/753x380.png" className="rounded-[15px]"/>
+                        <img src={image} className="rounded-[15px]"/>
                     </div>
                     <div className="bg-white rounded-[15px] shadow-lg p-5">
                         <h2 className="
@@ -44,7 +65,7 @@ export const Project = () => {
                         ">Informacion</h2>
                         <p className="
                             font-inter font-regular text-descripciondelproyecto text-text90
-                        ">Ano: 2024 <br/> Rol: Desarrollador Frontend  
+                        ">Ano: {year} <br/> Rol: {role}  
                         </p>
                     </div>
                     <div className="bg-white rounded-[15px] shadow-lg p-5">
@@ -68,7 +89,7 @@ export const Project = () => {
                         ">Problema</h2>
                         <p className="
                             font-inter font-regular text-descripciondelproyecto text-text90
-                        ">Descripcion corta del proyecto</p>
+                        ">{problem}</p>
                     </div>
                     <div className="bg-white rounded-[15px] shadow-lg p-5">
                         <h2 className="
@@ -76,7 +97,7 @@ export const Project = () => {
                         ">Solucion</h2>
                         <p className="
                             font-inter font-regular text-descripciondelproyecto text-text90
-                        ">Descripcion corta del proyecto</p>
+                        ">{solution}</p>
                     </div>
                     <div className="sm:col-span-2 bg-white rounded-[15px] shadow-lg p-5">
                         <h2 className="

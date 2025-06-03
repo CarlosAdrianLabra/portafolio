@@ -48,7 +48,9 @@ export const About = () => {
                             max-w-[217px]
                             max-h-[60px]
                           ">
-                            <Botones/>
+                            <a href="/Carlos_Adrián_Labra_Granados_CV.pdf" download>
+                        <Botones/>
+                    </a>
                           </div>
                         </div>
                         <div className="

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "konfront",
+    "role": "Líder técnico",
+    "period": "Jun 2024 – Presente",
+    "companyLogo": "/img/konfront.png",
+    "highlights": [
+      "↓35 % en tiempos de release con CI/CD en Bubble",
+      "Integré Salesforce Marketing Cloud (30 K usuarios)",
+      "Migré SOAP→REST para Primero Seguros"
+    ],
+    "stackLogos": [
+      "/icons/bubble.svg",
+      "/icons/aws.svg",
+      "/icons/salesforce.svg",
+      "/icons/postgres.svg",
+      "/icons/git.svg",
+      "/icons/jira.svg"
+    ]
+  },
+  {
+    "id": "freelance",
+    "role": "Full-Stack Developer Freelance",
+    "period": "Ene 2021 – May 2024",
+    "companyLogo": "/img/freelance.png",
+    "highlights": [
+      "5 MVPs lanzados en ≤ 6 semanas",
+      "Pagos Stripe en MX, CO y CL",
+      "Implementé Supabase + Next.js SSR"
+    ],
+    "stackLogos": [
+      "/icons/react.svg",
+      "/icons/nextjs.svg",
+      "/icons/stripe.svg",
+      "/icons/supabase.svg"
+    ]
+  },
+  {
+    "id": "workshops",
+    "role": "Instructor UI/UX & APIs",
+    "period": "Ago 2020 – Dic 2021",
+    "companyLogo": "/img/workshops.png",
+    "highlights": [
+      "150+ alumnos capacitados",
+      "Evaluación promedio 4.8/5"
+    ],
+    "stackLogos": [
+      "/icons/bubble.svg",
+      "/icons/figma.svg",
+      "/icons/zapier.svg"
+    ]
+  }
+]
