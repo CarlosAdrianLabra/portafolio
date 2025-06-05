@@ -2,7 +2,7 @@
 export const Botones = ({ texto = "Descargar CV", onClick }) => {
   return (
     <button className="bg-accent-blue text-primario-bglight
-      hover:bg-primario-bglight
+      hover:bg-transparent
       hover:text-accent-blue
       hover:border-accent-blue  
       border border-transparent

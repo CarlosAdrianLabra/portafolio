@@ -1,3 +1,4 @@
+import { Github, Linkedin, LinkedinIcon, Mail, Phone } from "lucide-react"
 
 export const TarjetaContacto = () => {
   return (
@@ -18,7 +19,7 @@ export const TarjetaContacto = () => {
             flex flex-row gap-x-4
             justify-start items-center
         ">
-            <img src="src\assets\material-symbols_mail.png" className="w-[50px] h-[50px]"/>
+           <Mail className="w-[50px] h-[50px] text-text90"/>
             <p className="
                 font-inter font-regular text-descripciondelproyecto text-text90
             ">carlosadrianlabragranados@gmail.com</p>
@@ -27,7 +28,7 @@ export const TarjetaContacto = () => {
             flex flex-row gap-x-4
             justify-start items-center
         ">
-            <img src="src\assets\material-symbols_phone-enabled.png" className="w-[50px] h-[50px]"/>
+            <Phone className="w-[50px] h-[50px] text-text90"/>
             <p className="
                 font-inter font-regular text-descripciondelproyecto text-text90
             ">55 25 08 03 93</p>
@@ -36,7 +37,7 @@ export const TarjetaContacto = () => {
             flex flex-row gap-x-4
             justify-start items-center
         ">
-            <img src="src\assets\mdi_github.png" className="w-[50px] h-[50px]"/>
+            <Github className="w-[50px] h-[50px] text-text90"/>
             <p className="
                 font-inter font-regular text-descripciondelproyecto text-text90
             ">CarlosLabraGranados</p>
@@ -45,7 +46,7 @@ export const TarjetaContacto = () => {
             flex flex-row gap-x-4
             justify-start items-center
         ">
-            <img src="src\assets\mdi_linkedin.png" className="w-[50px] h-[50px]"/>
+            <Linkedin className="w-[50px] h-[50px] text-text90"/>
             <p className="
                 font-inter font-regular text-descripciondelproyecto text-text90
             ">Carlos Adrian Labra Granados</p>

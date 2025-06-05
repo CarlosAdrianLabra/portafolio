@@ -84,12 +84,9 @@ export const Home = () => {
             font-inter font-semibold text-tituloproyecto text-text90 mb-5
           ">Proyectos</h1>
           <div className="
-            grid
-            grid-cols-3
-            
-            justify-items-center">
+           columns-1 sm:columns-2 lg:columns-3 gap-x-8 ">
               {randomProjects.map((p) => (
-            <TarjetaProyecto key={p.id} project={p} />
+            <TarjetaProyecto key={p.id} project={p} compact />
           ))}
         
 

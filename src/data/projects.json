@@ -1,53 +1,453 @@
 [
-  {
-    "id": "moodforkfood",
-    "title": "MoodForkFood",
-    "year": 2024,
-    "role": "Full-stack No-Code Dev",
-    "short":"Esta es una descripcion corta",
-    "image": "https://placehold.co/600x400?text=MFF",
-    "keyMetrics": [
-      "30 % ↑ en interacciones IG → app",
-      "2 000 usuarios activos/mes",
-      "USD 12 K GMV en 3 meses"
-    ],
-    "problem": "La creadora no podía monetizar las recomendaciones…",
-    "solution": "Marketplace + feed con sentiment-analysis y pagos Stripe.",
-    "challenges": [
-      "Sincronizar posts IG → app casi en tiempo real",
-      "Escalar la DB sin sobrecostos en Bubble"
-    ],
-    "responsibilities": [
-      "Arquitectura Bubble y UI",
-      "Integración AWS Comprehend",
-      "Webhooks Stripe + CRM"
-    ],
-    "technologies": ["Bubble.io", "AWS", "Stripe", "PostgreSQL"]
-  },
+{
+  "id": "promesaHub",
+  "title": "Promesa Hub",
+  "year": 2021,
+  "role": "Front-end Intern",
+  "short": "Plataforma PWA que coordina la recolección de residuos entre padres, maestros y logística de Grupo Promesa.",
+  "keyMetrics": [
+    "12 escuelas activas en el primer semestre",
+    "Mas de 200 familias registradas",
+    "25 % de residuos reciclados vs. periodo anterior"
+  ],
+  "problem": "La coordinación de recolección era manual (correos y chats) y generaba confusión sobre fechas, rutas y responsabilidades.",
+  "solution": "Hub centralizado con calendario de camiones, notificaciones push y tablero de tareas para padres y docentes.",
+  "challenges": [
+    "Aprender Django y levantar un CRUD sin experiencia previa",
+    "Optimizar la PWA para dispositivos moviles"
+  ],
+  "responsibilities": [
+    "Maquetación responsiva HTML/CSS y JS (PWA manifest + Service Worker)",
+    "Componentes UI para agenda y tableros de tareas",
+    "Migraciones básicas y consultas en Django"
+  ],
+  "technologies": ["html5", "css3", "javascript", "django", "python"]
+},
    {
-    "id": "moodforkfood2",
-    "title": "MoodForkFood",
-    "year": 2024,
-    "role": "Full-stack No-Code Dev",
-    "short":"Esta es una descripcion corta",
-    "image": "https://placehold.co/600x400?text=MFF",
-    "keyMetrics": [
-      "30 % ↑ en interacciones IG → app",
-      "2 000 usuarios activos/mes",
-      "USD 12 K GMV en 3 meses"
-    ],
-    "problem": "La creadora no podía monetizar las recomendaciones…",
-    "solution": "Marketplace + feed con sentiment-analysis y pagos Stripe.",
-    "challenges": [
-      "Sincronizar posts IG → app casi en tiempo real",
-      "Escalar la DB sin sobrecostos en Bubble"
-    ],
-    "responsibilities": [
-      "Arquitectura Bubble y UI",
-      "Integración AWS Comprehend",
-      "Webhooks Stripe + CRM"
-    ],
-    "technologies": ["Bubble.io", "AWS", "Stripe", "PostgreSQL"]
-  }
+  "id": "erpRopaCalzado",               
+  "title": "Excalibur ERP",  
+  "year": 2021,                         
+  "role": "Freelance Fullstack Developer",
+  "short": "ERP y Punto de Venta para tienda que buscaba reducir pérdidas e integrar contadores.",
+
+  "keyMetrics": [
+    "30 % en pérdidas por robo de inventario en los primeros 5 meses",
+    "Implementación en 100 % de las sucursales de la marca",
+    "20 % en velocidad de facturación vs. sistema anterior"
+  ],
+
+  "problem": "La tienda tenía altos niveles de robo y no contaba con un sistema unificado de control de inventarios ni punto de venta integrado.",
+  "solution": "Desarrollé un ERP a la medida con autenticación de empleados, gestión de inventarios en tiempo real y módulo de punto de venta conectado a la base de datos central.",
+
+  "challenges": [
+    "Implementar control de inventario en tiempo real con sincronización entre sucursales.",
+    "Desarrollar módulo de punto de venta online para garantizar facturación.",
+    "Diseñar interfaces sencillas para empleados con poca experiencia técnica.",
+    "Despliegue en servidor VPS (Ubuntu) y configuración de backups automáticos."
+  ],
+
+  "responsibilities": [
+
+    "Análisis de requerimientos y diseño de la base de datos.",
+    "Implementación de frontend en Django con formularios dinámicos y validaciones.",
+    "Desarrollo de backend en Django con autenticación de usuarios y gestión de inventarios.",
+    "Configuración del módulo para impresión de tickets en impresora térmica."
+  ],
+
+  "technologies": [
+    "python",
+    "django",
+    "PostgreSQL",
+    "bootstrap",
+    "javascript",
+    "css3",
+    "html5"
+  ]
+},
+  {
+  "id": "dulcemente",
+  "title": "Dulcemente",
+  "year": "2022",
+  "role": "Freelance Fullstack Developer",
+  "short": "E-commerce a medida para venta de pasteles con notificaciones de estado de pedido y panel de administración para la emprendedora.",
+
+  "keyMetrics": [
+    "20 % en ventas online durante el primer mes",
+    "Más de 50 pedidos procesados correctamente en el primer mes"
+  ],
+
+  "problem": "La emprendedora vendía pasteles de forma manual (mensajes y llamadas) sin un portal centralizado para recibir pedidos ni notificaciones.",
+  "solution": "Creé una tienda en línea usando Django donde los clientes podían elegir pasteles, pagar con Stripe y recibir notificaciones cuando su pedido estuviera en camino; la emprendedora podía actualizar productos y gestionar pedidos desde un panel de administración.",
+
+  "challenges": [
+    "Configurar flujos de pago con Stripe y webhooks para registrar pagos en tiempo real.",
+    "Implementar notificaciones automáticas: pedido recibido, en preparación y entregado.",
+    "Diseñar un panel de administración intuitivo que permitiera a la emprendedora añadir/editar/eliminar productos sin conocimientos técnicos.",
+    "Programación de lógica en JavaScript para actualizar dinámicamente el estado de pedidos en la interfaz de usuario."
+  ],
+
+  "responsibilities": [
+    "Modelado de base de datos en PostgreSQL para productos, carrito, pedidos, clientes y estados de entrega.",
+    "Implementación del front-end responsivo con Bootstrap, HTML5 y CSS3 para la tienda y el panel administrativo.",
+    "Integración de Stripe Checkout y configuración de webhooks para confirmar pagos y activar notificaciones.",
+    "Despliegue de la aplicación en un servidor Linux (Ubuntu) usando Gunicorn y Nginx, configurando certificados SSL."
+  ],
+
+  "technologies": [
+    "python",
+    "django",
+    "postgresql",
+    "bootstrap",
+    "javascript",
+    "css3",
+    "html5",
+    "stripe"
+  ]
+},
+   {
+  "id": "prepanahuacDashboard",
+  "title": "Dashboard Leads PrepaNahuac",
+  "year": "2022",
+  "role": "Technology Operations Analyst",
+  "short": "Dashboard para gestionar leads de aspirantes a PrepaNahuac, integrando CRM y flujo de información en una sola aplicación.",
+
+  "keyMetrics": [
+    "500 leads procesados en el primer mes",
+    "30 % en eficiencia de seguimiento de leads vs. proceso previo",
+    "15 % en tiempo de respuesta a prospectos"
+  ],
+
+  "problem": "Los leads de aspirantes se capturaban en varios sistemas distintos y no existía un panel unificado para darles seguimiento, lo que provocaba demoras en el proceso de admisión.",
+  "solution": "Implementamos un dashboard centralizado donde los aspirantes completaban su información, subían documentos y agendaban cita para examen; cada lead se sincronizaba automáticamente desde Dynamics CRM hacia AWS Lambda y se mostraba en tiempo real en la plataforma.",
+
+  "challenges": [
+    "Configurar webhooks bidireccionales entre Microsoft Dynamics CRM y AWS Lambda para recibir leads en tiempo real.",
+    "Validar cargas de archivos (identificaciones y documentos) de aspirantes y almacenarlos de forma segura.",
+    "Diseñar una interfaz intuitiva para que los aspirantes pudieran completar su información y agendar citas sin complicaciones."
+  ],
+
+  "responsibilities": [
+    "Diseño del flujo de datos: desde el formulario de leads hasta la base de datos central y Dynamics CRM.",
+    "Desarrollo de funciones AWS Lambda en JavaScript para procesar webhooks y registrar leads automáticamente.",
+    "Maquetación de las pantallas de formulario y dashboard usando HTML5, CSS3 y Vanilla JavaScript.",
+    "Integración con Microsoft Dynamics CRM a través de webhooks y API, asegurando que cada lead se cree correctamente en el CRM."
+  ],
+
+  "technologies": [
+    "javascript",
+    "awslambda",
+    "cloudwatch",
+    "html5",
+    "css3"
+  ]
+},
+  {
+  "id": "encuestas360",
+  "title": "Encuestas 360",
+  "year": "2023",
+  "role": "Technology Operations Analyst",
+  "short": "Plataforma para crear y enviar encuestas a estudiantes con estadísticas en tiempo real.",
+
+  "keyMetrics": [
+    "1,200 encuestas enviadas en el primer mes",
+    "50 % en tasa de respuesta vs. proceso manual anterior",
+    "Generación de reportes en <5 segundos"
+  ],
+
+  "problem": "No existía un sistema unificado para que PrepaNahuac creara encuestas personalizadas, enviara correos masivos a estudiantes y visualizara resultados al instante.",
+  "solution": "Implementé un constructor de encuestas dinámico en JavaScript y CSS, integré SendGrid para el envío masivo de correos y configuré un dashboard que muestra estadísticas en tiempo real a medida que llegan las respuestas.",
+
+  "challenges": [
+    "Desarrollar lógica en el frontend para tipos de pregunta dinámicos (opción múltiple, respuesta abierta, escala de calificación).",
+    "Asegurar entrega masiva de correos sin caer en spam mediante configuración de SendGrid y manejo de webhooks de rebotes/aperturas.",
+    "Actualizar el dashboard en tiempo real con nuevas respuestas sin recargar la página."
+  ],
+
+  "responsibilities": [
+    "Creación del builder de encuestas en JavaScript y CSS3 para generar formularios dinámicos basados en configuraciones del administrador.",
+    "Integración con SendGrid API para envío masivo de correos y procesamiento de webhooks (rebotes, aperturas y clics).",
+    "Implementación de endpoints en JavaScript para recibir y almacenar respuestas de estudiantes en la base de datos.",
+    "Desarrollo del dashboard de estadísticas en tiempo real usando JavaScript para procesar datos y renderizar gráficos dinámicos."
+  ],
+
+  "technologies": [
+    "javascript",
+    "css3",
+    "html5",
+    "sendgrid"
+  ]
+},
+  {
+  "id": "moodforkfood",
+  "title": "MoodForkFood",
+  "year": "2023",
+  "role": "Technology Operations Analyst",
+  "short": "Plataforma de reseñas y recomendaciones de restaurantes con e-commerce de productos y experiencias.",
+
+  "keyMetrics": [
+    "500 usuarios activos mensuales en el primer trimestre",
+    "100 comentarios analizados con AWS Comprehend para sentiment analysis"
+  ],
+
+  "problem": "La influencer no contaba con una plataforma centralizada donde sus seguidores dejaran reseñas, guardaran favoritos y pudieran encontrar datos de ubicación y horarios de restaurantes al instante.",
+  "solution": "Desarrollé una aplicación en JavaScript que integra AWS Comprehend para analizar sentimientos en comentarios, Google Maps para mostrar ubicación y horarios, y un módulo de e-commerce con Stripe para vender productos y experiencias a sus seguidores.",
+
+  "challenges": [
+    "Integrar AWS Comprehend vía AWS Lambda para procesar comentarios y detectar sentimiento en tiempo real.",
+    "Consumir y visualizar datos de Google Maps API (ubicación, horarios y reseñas de restaurantes) de forma dinámica en el frontend.",
+    "Agregar módulo de e-commerce que incluyera catálogo de productos, carrito y procesamiento de pagos con Stripe."
+  ],
+
+  "responsibilities": [
+    "Diseño de frontend en JavaScript, HTML5 y CSS3 para la sección de reseñas, favoritos y detalle de restaurantes.",
+    "Implementación de funciones AWS Lambda en Node.js para invocar AWS Comprehend y almacenar el sentimiento de cada comentario.",
+    "Integración con Google Maps JavaScript API para mostrar mapas, horarios y permitir búsquedas de locales cercanos.",
+    "Desarrollo del módulo de e-commerce con integración de Stripe Checkout y webhooks para registro de pagos y notificaciones de órdenes."
+  ],
+
+  "technologies": [
+    "javascript",
+    "awslambda",
+    "aws",
+    "googlemaps",
+    "stripe",
+    "html5",
+    "css3"
+  ]
+},
+{
+  "id": "primeroSeguros",
+  "title": "Primero Seguros",
+  "year": "2024",
+  "role": "Sr. Technology Operations Analyst",
+  "short": "Plataforma de cotización de seguros de auto con integración SOAP, pagos en meses sin intereses y detección de fraude en tiempo real.",
+
+  "keyMetrics": [
+    "2,000 cotizaciones generadas en el primer mes",
+    "80 % en intervención manual vs proceso previo",
+    "10 % en fraudes detectados preventivamente"
+  ],
+
+  "problem": "Los usuarios dependían de agentes para cotizar seguros y no había un sistema automatizado que incluyera promociones bancarias ni detección de fraude antes de emitir la póliza.",
+  "solution": "Desarrollé un sistema en JavaScript que consumía servicios SOAP del CRM y del web service de cobranza para generar cotizaciones, procesar pagos a meses sin intereses y validaba cada solicitud contra un API de IA para detectar fraude en tiempo real.",
+
+  "challenges": [
+    "Integrar servicios SOAP del CRM de Primero Seguros y del módulo de cobranza bancaria asegurando alta disponibilidad y baja latencia.",
+    "Implementar la lógica de cálculo de promociones de meses sin intereses directamente en el front-end y back-end sin retrasar el flujo de cotización.",
+    "Llamar al API de IA de detección de fraude en tiempo real sin perjudicar la experiencia de usuario."
+  ],
+
+  "responsibilities": [
+    "Diseño de arquitectura y consumo de servicios SOAP desde AWS Lambda en JavaScript para cotizaciones y procesamiento de pagos.",
+    "Desarrollo de front-end responsivo en JavaScript, HTML5 y CSS3 para el formulario de cotización en la misma plataforma.",
+    "Integración de API de detección de fraude y configuración de alertas automáticas para transacciones sospechosas."
+  ],
+
+  "technologies": [
+    "javascript",
+    "awslambda",
+    "html5",
+    "css3",
+    "PostgreSQL",
+    "xml"
+  ]
+},
+{
+  "id": "laboratorioSilanes",
+  "title": "Laboratorio Silanes",
+  "year": "2023",
+  "role": "Sr. Technology Operations Analyst",
+  "short": "Plataforma para médicos autenticados que verifica cédula profesional, muestra descuentos en fármacos y permite realizar pedidos.",
+
+  "keyMetrics": [
+    "200 médicos registrados en el primer mes",
+    "25 % en ventas de fármacos con descuento",
+    "10 % en tiempo de verificación de cédula"
+  ],
+
+  "problem": "Los médicos no contaban con un portal para validar su cédula profesional y acceder a precios con descuento en fármacos, lo que complicaba el proceso de compra.",
+  "solution": "Implementé verificación de cédulas mediante una API externa y conecté la plataforma con Veeva, Salesforce, Snow, Medikit y Medclass para validar datos, mostrar precios con descuento y permitir pedidos en un solo flujo.",
+
+  "challenges": [
+    "Integrar múltiples servicios externos (Veeva, Salesforce, Snow, Medikit, Medclass) para verificación de cédulas y catálogo de fármacos.",
+    "Garantizar seguridad y privacidad en el manejo de datos confidenciales de profesionales de la salud.",
+    "Diseñar un flujo de pedidos intuitivo para médicos con UI dinámica y validaciones en tiempo real."
+  ],
+
+  "responsibilities": [
+    "Configuración de endpoints en JavaScript para consumir API de verificación de cédulas y extraer nombre, apellidos y credenciales.",
+    "Integración con Veeva CRM y Salesforce para sincronizar datos de médicos y sus permisos de acceso.",
+    "Desarrollo de lógica de precios con Snow y Medikit para mostrar descuentos en tiempo real.",
+    "Supervisión y mentoring de un equipo de 2 ingenieros Jr. en la implementación de pantallas y módulos de pedido."
+  ],
+
+  "technologies": [
+    "javascript",
+    "html5",
+    "css3",
+    "salesforce",
+    "PostgreSQL",
+    "awslambda"
+  ]
+},
+{
+  "id": "nutVC",
+  "title": "NutVC",
+  "year": "2024",
+  "role": "Sr. Technology Operations Analyst",
+  "short": "Portal de scoring para inversionistas que evalúa startups mediante cuestionarios y análisis de OpenAI.",
+
+  "keyMetrics": [
+    "50 startups evaluadas en el primer trimestre",
+    "40 % en eficiencia de screening vs proceso manual",
+    "50 % en tiempo de respuesta para inversores"
+  ],
+
+  "problem": "Los inversionistas carecían de un proceso automatizado para priorizar startups, y las emprendedoras no tenían una forma estandarizada de presentar métricas clave.",
+  "solution": "Desarrollé junto con mi equipo un portal en React donde cada startup accede mediante un URL personalizado, completa un cuestionario y recibe un scoring automático; además, integramos OpenAI para generar un análisis cualitativo de cada empresa.",
+
+  "challenges": [
+    "Generar URLs únicas y seguras para cada startup sin exponer datos sensibles.",
+    "Diseñar un cuestionario dinámico en React que ajustara preguntas según respuestas previas.",
+    "Integrar la API de OpenAI para producir un análisis automático sin retrasar el flujo de evaluación."
+  ],
+
+  "responsibilities": [
+    "Diseño e implementación de la interfaz en React para cuestionarios y resultados de scoring.",
+    "Integración con OpenAI API para analíticas de texto y resumen de datos de startups.",
+    "Supervisión y mentoring de un equipo de 4 ingenieros Jr. en la creación del backend y lógica de scoring.",
+    "Configuración de pipeline de despliegue en AWS Lambda y API Gateway para el procesamiento de solicitudes.",
+    "Configuración de la base de datos (PostgreSQL) para almacenar respuestas, puntajes y metadatos de startups."
+  ],
+
+  "technologies": [
+    "react",
+    "javascript",
+    "nodejs",
+    "html5",
+    "css3",
+    "openai",
+    "awslambda",
+    "postgresql",
+    "tailwindcss"
+  ]
+},
+{
+  "id": "xcapePlatform",
+  "title": "Xcape",
+  "year": "2024",
+  "role": "Technology Operations Engineer",
+  "short": "PWA para gestión de viajes estudiantiles, con selección de experiencias, planes de pago y CRM integrado.",
+
+  "keyMetrics": [
+    "1,500 reservas de viaje procesadas en el primer semestre",
+    "35 % en ventas de experiencias adicionales vs. proceso previo",
+    "20 % en tiempo de gestión de reservas para el equipo Xcape"
+  ],
+
+  "problem": "Xcape organizaba viajes de forma manual, sin un sistema digital que permitiera a los estudiantes crear grupos, elegir experiencias y gestionar pagos, lo que generaba errores y retrasos en la logística.",
+  "solution": "Desarrollé una PWA responsiva que permite a los estudiantes formar grupos, seleccionar experiencias, planificar pagos a meses y, simultáneamente, brinda al equipo de Xcape un CRM integrado para visualizar viajes realizados y administrar ofertas en la misma interfaz.",
+
+  "challenges": [
+    "Diseñar un flujo de grupos dinámico donde varios estudiantes pudieran unirse, ver disponibilidad y reservar experiencias en tiempo real.",
+    "Implementar pagos a meses sin intereses con Stripe, asegurando que las opciones de plan de pago fueran visibles y ajustables durante la reserva.",
+    "Desarrollar la PWA con service workers para que la plataforma funcionara offline y en dispositivos móviles, manteniendo una UX fluida para usuarios no técnicos."
+  ],
+
+  "responsibilities": [
+    "Diseño de la arquitectura de la PWA y configuración de service workers para soporte offline en dispositivos móviles.",
+    "Implementación en JavaScript y CSS3 de la interfaz de creación de grupos y selección de experiencias, garantizando usabilidad para usuarios sin experiencia técnica.",
+    "Integración con Stripe API para ofrecer planes de pago a meses sin intereses y gestión de suscripciones.",
+    "Supervisión y mentoring de ingenieros Jr. y Sr. en la implementación de módulos de reservas y en pruebas end-to-end de todo el flujo de viaje."
+  ],
+
+  "technologies": [
+    "javascript",
+    "html5",
+    "css3",
+    "stripe",
+    "postgresql"
+  ]
+},
+{
+  "id": "j4vo",
+  "title": "J4VO",
+  "year": "2025",
+  "role": "Technology Operations Engineer",
+  "short": "Plataforma para PYMEs que gestiona productos, gastos y cumplimiento fiscal con integración SAT y dashboard de KPIs.",
+
+  "keyMetrics": [
+    "20 negocios registrados en los primeros dos meses",
+    "50 % en eficiencia de reporte fiscal vs proceso manual",
+    "40 % en tiempo de generación de KPIs para tomadores de decisión"
+  ],
+
+  "problem": "Las pequeñas y medianas empresas carecían de una herramienta unificada para manejar inventarios, gastos, asesoría fiscal y enviar información al SAT de forma automática.",
+  "solution": "Desarrollé en React una plataforma que permite a las PYMEs introducir productos, registrar gastos, recibir consejos fiscales, sincronizar datos con Fispal/SAT y consultar un dashboard interactivo de KPIs con Chart.js; además, los usuarios Pro pueden pagar su suscripción mensual via Stripe.",
+
+  "challenges": [
+    "Integrar la API de Fispal para extracción automática de datos",
+    "Diseñar un dashboard interactivo de KPIs en Chart.js que se actualizara en tiempo real sin afectar el rendimiento.",
+    "Implementar niveles de suscripción con Stripe, asegurando cobros mensuales y gestión de acceso según tier Pro o básico."
+  ],
+
+  "responsibilities": [
+    "Implementación de formularios React para entradas de productos, gastos y generación de reportes fiscales.",
+    "Desarrollo del dashboard de KPIs usando Chart.js, permitiendo filtrado dinámico por fechas y categorías.",
+    "Configuración de Stripe Checkout y webhooks para gestionar suscripciones mensuales y control de acceso según tiers.",
+    "Mentoría y supervisión de un equipo con un ingeniero Jr. y un ingeniero Sr. en desarrollo de módulos y pruebas end-to-end."
+  ],
+
+  "technologies": [
+    "react",
+    "javascript",
+    "chartjs",
+    "stripe",
+    "html5",
+    "tailwindcss",
+    "redux",
+    "postgresql",
+    "nodejs"
+  ]
+},
+{
+  "id": "inventaCredit",
+  "title": "Inventa",
+  "year": "2024",
+  "role": "Technology Operations Engineer",
+  "short": "Portal de cotización de crédito para corredores de seguros con validación automatizada de candidatos vía libro negro.",
+
+  "keyMetrics": [
+    "1,200 cotizaciones internas generadas en 2 meses",
+    "800 cotizaciones públicas en el primer mes de lanzamiento",
+    "30 % en tiempo de cotización vs. proceso manual previo"
+  ],
+
+  "problem": "Los corredores de seguros de Inventa carecían de una herramienta digital para generar cotizaciones de crédito rápidamente y no contaban con un mecanismo automático para excluir candidatos en el libro negro, lo que retrasaba la aprobación de pólizas.",
+  "solution": "Desarrollé un cotizador interno en React que permitía a los empleados crear pólizas de forma ágil, luego extendimos el cotizador al público general a través de una interfaz web; además, implementé un módulo de validación que consultaba el libro negro y levantaba red flags en tiempo real.",
+
+  "challenges": [
+    "Diseñar una validación en tiempo real contra la base de datos del libro negro sin impactar la velocidad de cotización.",
+    "Crear flujos dinámicos de formulario en React que adaptaran campos según el perfil del solicitante (interno vs. público).",
+    "Asegurar que los datos sensibles de los solicitantes se manejaran con cifrado y control de acceso adecuado."
+  ],
+
+  "responsibilities": [
+    "Diseño e implementación del front-end en React para el cotizador interno y la versión pública.",
+    "Desarrollo de endpoints en Node.js y Express para gestionar solicitudes de cotización, cálculos y validación de datos.",
+    "Integración de base de datos (PostgreSQL) para almacenar cotizaciones, datos de solicitantes y registros de libro negro.",
+    "Despliegue de la plataforma en AWS, configurando API Gateway, Lambda y CloudWatch para monitoreo de errores y métricas."
+  ],
+
+  "technologies": [
+    "react",
+    "javascript",
+    "html5",
+    "css3",
+    "nodejs",
+    "awslambda",
+    "postgresql"
+  ]
+}
   
 ]

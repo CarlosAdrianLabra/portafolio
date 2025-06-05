@@ -1,53 +1,59 @@
 [
   {
     "id": "konfront",
-    "role": "Líder técnico",
-    "period": "Jun 2024 – Presente",
-    "companyLogo": "/img/konfront.png",
+    "role": "Technology operations engineer, Konfront",
+    "period": "Mar 2024 — Present",
     "highlights": [
-      "↓35 % en tiempos de release con CI/CD en Bubble",
-      "Integré Salesforce Marketing Cloud (30 K usuarios)",
-      "Migré SOAP→REST para Primero Seguros"
+      "Dirigí un equipo de 7 personas (3 Sr, 4 Jr) en diez proyectos simultáneos; responsable de la planificación de sprints y los OKRs.",
+      "Implementé Xcape, app de reservas para grupos universitarios: los usuarios arman paquetes y pagan in-app; procesó 1 000 000 MXN el primer mes y redujo en 80 % la coordinación manual del personal.",
+      "Desplegué J4VO junto con mi equipo, plataforma financiera para PYMES: panel de flujo de caja, gastos y consejos fiscales; integré un dashboard interactivo de KPI (Chart.js); el 82 % de los usuarios reportaron «mejor visibilidad financiera».",
+      "Mi equipo y yo desarrollamos, Inventa, portal de cotización de crédito para corredores de seguros; automatizó flujos y redujo el tiempo de respuesta de 3 h a menos de 30 min, mejorando la precisión de los datos."
     ],
-    "stackLogos": [
-      "/icons/bubble.svg",
-      "/icons/aws.svg",
-      "/icons/salesforce.svg",
-      "/icons/postgres.svg",
-      "/icons/git.svg",
-      "/icons/jira.svg"
-    ]
+    "stackLogos": ["javascript", "react", "nodejs", "aws", "chartjs", "notion"]
   },
   {
-    "id": "freelance",
-    "role": "Full-Stack Developer Freelance",
-    "period": "Ene 2021 – May 2024",
-    "companyLogo": "/img/freelance.png",
+    "id": "konfront2",
+    "role": "Sr. Technology operations analyst, Konfront",
+    "period": "Jul 2023 — Mar 2024",
     "highlights": [
-      "5 MVPs lanzados en ≤ 6 semanas",
-      "Pagos Stripe en MX, CO y CL",
-      "Implementé Supabase + Next.js SSR"
+      "Mentoreé a 4 ingenieros Jr e introduje un checklist de code review, reduciendo los errores post-release en un 30 %.",
+      "Construí Plataforma-Silanes: médicos autenticados consultan fármacos con descuento y hacen pedidos; el manejo de excepciones y un onboarding optimizado aumentaron los médicos verificados de 1 200 a 2 800 en 4 meses sin tickets adicionales de soporte.",
+      "Desarrollé junto con mi equipo, NutVC, portal de scoring para inversionistas: integré cuestionarios de startups con un modelo de ML; el due diligence por deal pasó de 45 min a menos de 5 min.",
+      "Desarrollé el sitio de cotización y pago de autoservicio para Primero Seguros; precios dinámicos y detección de fraude con IA redujeron las reclamaciones fraudulentas en un 15 % y permitieron emitir pólizas end-to-end.",
+      "Integré Stripe con webhooks para pagos recurrentes y notificaciones en tiempo real; conciliación automática de transacciones."
     ],
-    "stackLogos": [
-      "/icons/react.svg",
-      "/icons/nextjs.svg",
-      "/icons/stripe.svg",
-      "/icons/supabase.svg"
-    ]
+     "stackLogos": ["javascript", "react", "aws", "stripe", "figma", "nodejs"]
   },
   {
-    "id": "workshops",
-    "role": "Instructor UI/UX & APIs",
-    "period": "Ago 2020 – Dic 2021",
-    "companyLogo": "/img/workshops.png",
+    "id": "konfront3",
+    "role": "Technology operations analyst, Konfront",
+    "period": "Jun 2022 — Jul 2023",
     "highlights": [
-      "150+ alumnos capacitados",
-      "Evaluación promedio 4.8/5"
+      "Definí funcionalidades con clientes, asigné story points y negocié plazos realistas, logrando un 95 % de entregas a tiempo.",
+      "Lancé MoodForkFood, app foodie con buscador geolocalizado y tienda in-app; aumentó el engagement de seguidores del influencer en un 60 % y abrió un nuevo flujo de ingresos por mercancía.",
+      "Apoyé en la construcción de Anáhuac 360 Surveys para 8 000 estudiantes; automatizó la creación de encuestas y dashboards, reduciendo el tiempo de análisis en un 70 % y guiando decisiones presupuestales.",
+      "Construí y mantengo mi portafolio personal (React + Vite) con CI/CD en Vercel."
     ],
-    "stackLogos": [
-      "/icons/bubble.svg",
-      "/icons/figma.svg",
-      "/icons/zapier.svg"
-    ]
+    "stackLogos": ["javascript", "react", "nodejs", "aws", "googlemaps", "sendgrid"]
+  },
+   {
+    "id": "freelance1",
+    "role": "Freelance full-stack developer",
+    "period": "May 2021 — May 2022",
+    "highlights": [
+      "Diseñé y desplegué un ERP a medida para una empresa de ropa y calzado: control de inventario, flujo de caja y órdenes de compra que brindó visibilidad completa del movimiento del dinero.",
+      "Creé un e-commerce para una emprendedora pastelera: catálogo personalizable, pagos en línea y gestor de pedidos; lanzó su tienda digital y duplicó sus ventas mensuales."
+    ],
+    "stackLogos": ["django", "python", "postgresql", "stripe", "javascript", "bootstrap"]
+
+  },
+  {
+    "id": "grupoPromesa",
+    "role": "Professional Internship, Grupo Promesa",
+    "period": "Aug 2020 — Apr 2021",
+    "highlights": [
+      "Apoyé en la creación de un hub interno, contribuyendo tanto al front-end como al back-end para optimizar la gestión de actividades de la empresa."
+    ],
+    "stackLogos": [ "html5", "css3", "bootstrap", "javascript", "python", "django"]
   }
 ]

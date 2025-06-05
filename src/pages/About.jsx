@@ -1,13 +1,12 @@
-import { Navbar } from "../components/layout/Navbar"
 import { TarjetaSobreMiFoto } from "../components/composite/TarjetaSobreMiFoto"
 import { Botones } from "../components/ui/Botones"
+
 
 export const About = () => {
   return (
      <div className="
               bg-primario-bglight
               h-lvh">
-                {/* <Navbar/> */}
                 <div className="
                     max-w-[1140px]
                     mx-auto
@@ -30,7 +29,7 @@ export const About = () => {
                             font-inter font-regular text-tituloproyecto text-text90 leading-10 mb-[25px]
                           ">Lider tecnico y desarrollador React con mas de 3 anos de experiencia</p>
                           <p className="
-                            font-inter font-regular text-btn text-descripciondelproyecto leading-7 mb-[25px]
+                            font-inter font-regular text-btn text-descripciondelproyecto text-text90 leading-7 mb-[25px]
                           ">Como lider tecnico, epecializado en React, he gestionado equipos de desarrolladores
                             y he liderado proyectos exitosos, asegurando la calidad del codigo y la entrega a tiempo.
                             Mi enfoque en la arquitectura de software y las mejores practicas me han permitido

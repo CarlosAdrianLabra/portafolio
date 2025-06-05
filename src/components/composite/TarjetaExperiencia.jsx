@@ -1,86 +1,50 @@
+import { ICON_MAP } from "../../context/Icon-map";
 
-export const TarjetaExperiencia = ({ exp }) => {
-    if (!exp) return null;   
-
-    const {
-    role,
-    period,              // "Jun 2024 – Presente"
-    companyLogo,         // "/img/konfront-logo.png" o URL externa
-    highlights,          // array de strings
-    stackLogos           // array de URLs (máx 6 para tu grid)
-  } = exp;
+export const TarjetaExperiencia = ({ exp, isLast }) => {
+  if (!exp) return null;
+  const { role, period, highlights, stackLogos } = exp;
 
   return (
-    <div className="
-        bg-white
-        max-w-[1138px]
-        max-h-[240px]
-        mx-auto
-        flex
-        justify-between
-        items-center
-    ">
-        <div className="bg-white
-            max-w-[685px]
-            max-h-[240px]
-            flex">
-            <img src="src\assets\Frame 33.png"/>
-            <div className="
-            bg-white
-            max-w-[600px]
-            ">
-                <h1 className="
-                    font-inter font-medium text-btn text-text90 pt-2
-                ">{role}</h1>
-                <p className="
-                    font-inter font-regular text-descripciondelproyecto text-text90
-                ">{period}</p>
-                <ul className="
-                    list-inside list-disc ms-4
-                    font-inter font-regular text-descripciondelproyecto text-text90
-                ">
-                    {highlights.map((h) => (
-                        <li key={h}>{h}</li>
-                        ))}
-                    
-                    
-                    
-                </ul>
-            </div>
+    /* contenedor del ítem del timeline */
+    <li className="relative flex gap-8 pl-12">
+      {/* círculo */}
+      <span className="absolute left-0 top-5 z-10 h-4 w-4 rounded-full bg-gray-300 ring-2 ring-white dark:bg-gray-600" />
 
-        </div>
-        
-        <div className="
-            grid grid-cols-2 gap-x-4 gap-y-2
-            max-w-[181px]
-        ">
-            <img src='https://placehold.co/55x55.png' className="
-                max-w-[55px]
-                max-h-[55px]
-            "/>
-            <img src='https://placehold.co/55x55.png' className="
-                max-w-[55px]
-                max-h-[55px]
-            "/> 
-            <img src='https://placehold.co/55x55.png' className="
-                max-w-[55px]
-                max-h-[55px]
-            "/> 
-            <img src='https://placehold.co/55x55.png' className="
-                max-w-[55px]
-                max-h-[55px]
-            "/> 
-            <img src='https://placehold.co/55x55.png' className="
-                max-w-[55px]
-                max-h-[55px]
-            "/> 
-            <img src='https://placehold.co/55x55.png' className="
-                max-w-[55px]
-                max-h-[55px]
-            "/>     
-        </div>
+      {/* línea (solo si NO es el último elemento) */}
+      {!isLast && (
+        <span className="absolute left-2 top-8 -bottom-20 w-px bg-gray-300 dark:bg-gray-600" />
+      )}
 
+      {/* ------- contenido principal ------- */}
+      <div className="flex-1">
+        <h2 className="font-inter font-medium text-btn text-text90 dark:text-gray-100">
+          {role}
+        </h2>
 
-    </div>
-  )
-}
+        <p className="font-inter text-descripciondelproyecto text-text90 dark:text-gray-400">
+          {period}
+        </p>
+
+        <ul className="list-disc list-inside ms-4 space-y-1 font-inter text-descripciondelproyecto text-text90 dark:text-gray-300">
+          {highlights.map((h) => (
+            <li key={h}>{h}</li>
+          ))}
+        </ul>
+      </div>
+
+      {/* ------- iconos de stack ------- */}
+      <div className="grid grid-cols-2 gap-4 w-28 self-center content-start">
+        {stackLogos.map((tech) => {
+          const Icon = ICON_MAP[tech];
+          return Icon ? (
+            <Icon
+              key={tech}
+              title={tech}
+              className="text-4xl text-text90"
+            />
+          ) : null;
+        })}
+      </div>
+    </li>
+  );
+};

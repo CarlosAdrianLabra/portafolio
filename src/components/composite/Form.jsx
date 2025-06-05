@@ -55,7 +55,7 @@ export const Form = () => {
             mb-5
             col-span-2
             placeholder:text-placeholder'
-            placeholder='Escribe tu mensaje. Prometo responder pronto 😊'></textarea>
+            placeholder='Escribe tu mensaje. Prometo responder pronto.'></textarea>
         <div className='
             col-span-1
             h-[50px]

@@ -1,3 +1,5 @@
+import { FaAws } from "react-icons/fa"
+import { SiReact, SiNextdotjs, SiAwslambda, SiTypescript } from "react-icons/si"
 
 export const TarjetaSobreMiFoto = () => {
   return (
@@ -15,12 +17,12 @@ export const TarjetaSobreMiFoto = () => {
         <div className="
             max-w-[225px]
             max-h-[225px]
-            grid grid-cols-2 gap-x-4 gap-y-4
+            grid grid-cols-2 gap-x-8 gap-y-5
         ">
-        <img src="https://placehold.co/100x100.png"/>
-        <img src="https://placehold.co/100x100.png"/> 
-        <img src="https://placehold.co/100x100.png"/> 
-        <img src="https://placehold.co/100x100.png"/>    
+        <SiReact className="h-[100px] w-[100px] text-text90" />
+        <SiNextdotjs className="h-[100px] w-[100px] text-text90" />
+        <FaAws className="h-[100px] w-[100px] text-text90" />
+        <SiTypescript className="h-[100px] w-[100px] text-text90" />  
         </div>
     </div>
   )

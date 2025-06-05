@@ -1,128 +1,133 @@
-import { Navbar } from "../components/layout/Navbar"
 import { useParams, Navigate } from "react-router";
+import { Navbar } from "../components/layout/Navbar";
+import { Card } from "../components/ui/Card";
+import { ICON_MAP } from "../context/Icon-map";
 import projects from "../data/projects.json";
 
+/* ---------- helpers ---------- */
+const TechIcon = ({ tech }) => {
+  const Icon = ICON_MAP[tech.toLowerCase()];
+  return Icon ? (
+    <Icon className="text-4xl text-text90 dark:text-gray-300" title={tech} />
+  ) : (
+    <span className="text-sm text-gray-500">{tech}</span>
+  );
+};
+
 export const Project = () => {
+  const { id } = useParams();
+  const project = projects.find((p) => p.id === id);
+  if (!project) return <Navigate to="/projects" />;
 
-    const { id } = useParams();
-    const project = projects.find((p) => p.id === id);
-    if (!project) return <Navigate to="/projects" />;
+  const {
+    title,
+    short,
+    image,
+    year,
+    role,
+    keyMetrics = [],
+    problem,
+    solution,
+    challenges = [],
+    responsibilities = [],
+    technologies = []
+  } = project;
 
-    const {
-        title,
-        short,
-        image,
-        year,
-        role,
-        keyMetrics,
-        problem,
-        solution,
-        challenges,
-        responsibilities,
-        technologies,
-    } = project;
+  /* ---------- Fallback de imagen ---------- */
+  const Hero = () =>
+    image ? (
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-full rounded-[15px] object-cover"
+      />
+    ) : (
+      <div className="h-60 w-full rounded-[15px] grid place-items-center bg-gray-100 dark:bg-gray-800">
+        <span className="text-gray-400 dark:text-gray-500 text-center px-6">
+          Imagen no disponible<br />({title})
+        </span>
+      </div>
+    );
 
+  /* ---------- UI ---------- */
   return (
-    <div className="
-        bg-primario-bglight
-        h-full">
-        {/* <Navbar/> */}
-        <div className="
-            max-w-[1140px]
-            mx-auto
-            pb-15
-            pt-10">
-            <h1 className="
-            font-inter font-semibold text-hero text-text90 
-            ">{title}</h1>
-            <p className="
-            font-inter font-regular text-tituloproyecto text-text90
-            ">{short}</p>
-                <div className="grid grid-cols-1 sm:grid-cols-3
-                                gap-5 mt-10
-                                grid-flow-row-dense ">
-                    <div className="col-span-2 row-span-2">
-                        <img src={image} className="rounded-[15px]"/>
-                    </div>
-                    <div className="bg-white rounded-[15px] shadow-lg p-5">
-                        <h2 className="
-                            font-inter font-medium text-btn text-text90
-                        ">Metricas clave</h2>
-                        <ul className="
-                            font-inter font-regular text-descripciondelproyecto text-text90 
-                            list-disc list-inside
-                        ">
-                            <li>Metricas 1</li>
-                            <li>Metricas 2</li>
-                            <li>Metricas 3</li>
-                            <li>Metricas 4</li>
+    <div className="bg-primario-bglight min-h-screen">
+      {/* <Navbar /> */}
 
-                        </ul>
-                    </div>
-                    <div className="bg-white rounded-[15px] shadow-lg p-5">
-                        <h2 className="
-                            font-inter font-medium text-btn text-text90
-                        ">Informacion</h2>
-                        <p className="
-                            font-inter font-regular text-descripciondelproyecto text-text90
-                        ">Ano: {year} <br/> Rol: {role}  
-                        </p>
-                    </div>
-                    <div className="bg-white rounded-[15px] shadow-lg p-5">
-                        <h2 className="
-                            font-inter font-medium text-btn text-text90
-                        ">Responsabilidades</h2>
-                        <ul className="
-                            font-inter font-regular text-descripciondelproyecto text-text90 
-                            list-disc list-inside
-                        ">
-                            <li>Metricas 1</li>
-                            <li>Metricas 2</li>
-                            <li>Metricas 3</li>
-                            
+      <div className="max-w-[1140px] mx-auto pt-10 pb-15">
+        {/* Encabezado */}
+        <h1 className="font-inter font-semibold text-hero text-text90">
+          {title}
+        </h1>
+        <p className="font-inter text-tituloproyecto text-text90">{short}</p>
 
-                        </ul>
-                    </div>
-                    <div className="bg-white rounded-[15px] shadow-lg p-5">
-                        <h2 className="
-                            font-inter font-medium text-btn text-text90
-                        ">Problema</h2>
-                        <p className="
-                            font-inter font-regular text-descripciondelproyecto text-text90
-                        ">{problem}</p>
-                    </div>
-                    <div className="bg-white rounded-[15px] shadow-lg p-5">
-                        <h2 className="
-                            font-inter font-medium text-btn text-text90
-                        ">Solucion</h2>
-                        <p className="
-                            font-inter font-regular text-descripciondelproyecto text-text90
-                        ">{solution}</p>
-                    </div>
-                    <div className="sm:col-span-2 bg-white rounded-[15px] shadow-lg p-5">
-                        <h2 className="
-                            font-inter font-medium text-btn text-text90
-                        ">Tecnologias</h2>
-                        <div className=" flex mt-4 justify-between">
-                            <img src="https://placehold.co/90x90.png"/>
-                            <img src="https://placehold.co/90x90.png"/>
-                            <img src="https://placehold.co/90x90.png"/>
-                            <img src="https://placehold.co/90x90.png"/>
-                            
-                        </div>
-                    </div>
-                    <div className="bg-white rounded-[15px] shadow-lg p-5">
-                        <h2 className="
-                            font-inter font-medium text-btn text-text90
-                        ">Desafios</h2>
-                        <p className="
-                            font-inter font-regular text-descripciondelproyecto text-text90
-                        ">Descripcion corta del proyecto</p>
-                    </div>
+        {/* =============== CONTENIDO =============== */}
+        <div className="mt-10 space-y-6">
+          {/* ---------- FILA 1 ---------- */}
+          <div className="grid gap-6 sm:grid-cols-3">
+            {/* Foto grande */}
+            <div className="sm:col-span-2">
+              <Hero />
+            </div>
 
-                </div>
+            {/* Columna lateral (Métricas + Info) */}
+            <div className="flex flex-col gap-6">
+              <Card title="Métricas clave">
+                <ul className="list-disc list-inside space-y-1">
+                  {keyMetrics.map((m) => (
+                    <li key={m}>{m}</li>
+                  ))}
+                </ul>
+              </Card>
+              <Card title="Desafíos">
+              <ul className="list-disc list-inside space-y-1">
+                {challenges.map((c) => (
+                  <li key={c}>{c}</li>
+                ))}
+              </ul>
+            </Card>
+
+              
+            </div>
+          </div>
+
+          {/* ---------- FILA 2 ---------- */}
+          <div className="grid gap-6 sm:grid-cols-3">
+            <Card title="Responsabilidades">
+              <ul className="list-disc list-inside space-y-1">
+                {responsibilities.map((r) => (
+                  <li key={r}>{r}</li>
+                ))}
+              </ul>
+            </Card>
+
+            <Card title="Problema">
+              <p>{problem}</p>
+            </Card>
+
+            <Card title="Solución">
+              <p>{solution}</p>
+            </Card>
+
+            {/* Tecnologías → ancho doble */}
+            <Card title="Tecnologías" className="sm:col-span-2">
+              <div className="flex flex-wrap justify-around gap-6 mt-2 grow">
+                {technologies.map((t) => (
+                  <TechIcon key={t} tech={t} />
+                ))}
+              </div>
+            </Card><Card title="Información">
+                <p>
+                  Año: {year}
+                  <br />
+                  Rol: {role}
+                </p>
+              </Card>
+
+            
+          </div>
         </div>
-                
+      </div>
     </div>
-  )
-}
+  );
+};
