@@ -5,7 +5,6 @@ export const TarjetaProyecto = ({ project }) => {
   if (!project) return null;
 
   const { id, title, image, short, technologies } = project;
-  const hasImage = Boolean(image);
 
   return (
     <article
@@ -19,7 +18,7 @@ export const TarjetaProyecto = ({ project }) => {
         {image && (
           <img
             src={image}
-            alt={`Screenshot de ${title}`}
+            alt={`${title}`}
             className="mb-4 h-32 w-full object-cover rounded-md"
           />
         )}

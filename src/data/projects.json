@@ -144,6 +144,7 @@
   {
   "id": "encuestas360",
   "title": "Encuestas 360",
+  "image":"/Encuestas.png",
   "year": "2023",
   "role": "Technology Operations Analyst",
   "short": "Plataforma para crear y enviar encuestas a estudiantes con estadísticas en tiempo real.",
@@ -180,6 +181,7 @@
   {
   "id": "moodforkfood",
   "title": "MoodForkFood",
+  "image":"/Moodforkfood.png",
   "year": "2023",
   "role": "Technology Operations Analyst",
   "short": "Plataforma de reseñas y recomendaciones de restaurantes con e-commerce de productos y experiencias.",
@@ -218,6 +220,7 @@
 {
   "id": "primeroSeguros",
   "title": "Primero Seguros",
+  "image":"/Primeroseguros.png",
   "year": "2024",
   "role": "Sr. Technology Operations Analyst",
   "short": "Plataforma de cotización de seguros de auto con integración SOAP, pagos en meses sin intereses y detección de fraude en tiempo real.",
@@ -255,6 +258,7 @@
 {
   "id": "laboratorioSilanes",
   "title": "Laboratorio Silanes",
+  "image":"/Silanes.png",
   "year": "2023",
   "role": "Sr. Technology Operations Analyst",
   "short": "Plataforma para médicos autenticados que verifica cédula profesional, muestra descuentos en fármacos y permite realizar pedidos.",
@@ -293,6 +297,7 @@
 {
   "id": "nutVC",
   "title": "NutVC",
+  "image":"/Nutvc.png",
   "year": "2024",
   "role": "Sr. Technology Operations Analyst",
   "short": "Portal de scoring para inversionistas que evalúa startups mediante cuestionarios y análisis de OpenAI.",
@@ -335,6 +340,7 @@
 {
   "id": "xcapePlatform",
   "title": "Xcape",
+  "image":"/Xcape.png",
   "year": "2024",
   "role": "Technology Operations Engineer",
   "short": "PWA para gestión de viajes estudiantiles, con selección de experiencias, planes de pago y CRM integrado.",
@@ -372,6 +378,7 @@
 {
   "id": "j4vo",
   "title": "J4VO",
+  "image":"/J4VO.png",
   "year": "2025",
   "role": "Technology Operations Engineer",
   "short": "Plataforma para PYMEs que gestiona productos, gastos y cumplimiento fiscal con integración SAT y dashboard de KPIs.",
@@ -406,14 +413,15 @@
     "html5",
     "tailwindcss",
     "redux",
-    "postgresql",
+    "mongodb",
     "nodejs"
   ]
 },
 {
   "id": "inventaCredit",
   "title": "Inventa",
-  "year": "2024",
+  "image":"/Inventa.png",
+  "year": "2025",
   "role": "Technology Operations Engineer",
   "short": "Portal de cotización de crédito para corredores de seguros con validación automatizada de candidatos vía libro negro.",
 
@@ -446,7 +454,7 @@
     "css3",
     "nodejs",
     "awslambda",
-    "postgresql"
+    "mongodb"
   ]
 }
   

@@ -20,10 +20,10 @@ export const Navbar = () => {
             
         ">
             <NavLink to={"/"}>
-            <img src="src\assets\Logoblanco.png"
+            <img src="\Logoblanco.png"
              alt="Logo personal"
              className="dark:hidden"/>
-             <img src="src\assets\Logodark.png"
+             <img src="\Logodark.png"
              alt="Logo personal obscuro"
              className="hidden dark:block"/>
              </NavLink>

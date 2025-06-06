@@ -24,7 +24,8 @@ import {
     SiXml,
     SiOpenai,
     SiTailwindcss,
-    SiRedux
+    SiRedux,
+    SiMongodb
 } from "react-icons/si";
 import { FaAws, FaMicrosoft } from "react-icons/fa"
 
@@ -56,5 +57,6 @@ export const ICON_MAP = {
     openai: SiOpenai,
     tailwindcss: SiTailwindcss,
     redux: SiRedux,
+    mongodb: SiMongodb,
     
     };

@@ -68,7 +68,7 @@ export const Home = () => {
             
           </div>
           <div>
-            <img src="src\assets\hero-light-1.png"/>
+            <img src="/hero-light-1.png"/>
           </div>
         </div>
         <div className="

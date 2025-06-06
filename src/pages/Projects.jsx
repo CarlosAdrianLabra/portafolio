@@ -1,6 +1,4 @@
 import { TarjetaProyecto } from "../components/composite/TarjetaProyecto"
-import { TarjetaProyecto2 } from "../components/composite/TarjetaProyecto2"
-import { Navbar } from "../components/layout/Navbar"
 import projects from "../data/projects.json";
 
 export const Projects = () => {
@@ -24,9 +22,11 @@ export const Projects = () => {
                     pt-20
                     columns-1 sm:columns-2 md:columns-3 gap-6
                 ">
-                    {projects.map((p) => (
-          <TarjetaProyecto key={p.id} project={p} />
-        ))}
+                     {[...projects]
+                      .sort(() => Math.random() - 0.5)
+                      .map((p) => (
+                        <TarjetaProyecto key={p.id} project={p} />
+                      ))} 
                     
                 </div>
             </div>

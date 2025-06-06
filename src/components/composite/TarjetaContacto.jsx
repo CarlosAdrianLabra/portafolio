@@ -1,5 +1,6 @@
 import { Github, Linkedin, LinkedinIcon, Mail, Phone } from "lucide-react"
 
+
 export const TarjetaContacto = () => {
   return (
     <div className="
@@ -24,15 +25,15 @@ export const TarjetaContacto = () => {
                 font-inter font-regular text-descripciondelproyecto text-text90
             ">carlosadrianlabragranados@gmail.com</p>
         </div>
-        <div className="
+        {/* <div className="
             flex flex-row gap-x-4
             justify-start items-center
         ">
             <Phone className="w-[50px] h-[50px] text-text90"/>
             <p className="
                 font-inter font-regular text-descripciondelproyecto text-text90
-            ">55 25 08 03 93</p>
-        </div>
+            ">12 34 56 78 90</p>
+        </div> */}
         <div className="
             flex flex-row gap-x-4
             justify-start items-center
