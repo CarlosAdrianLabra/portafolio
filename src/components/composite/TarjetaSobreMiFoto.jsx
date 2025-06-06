@@ -13,7 +13,7 @@ export const TarjetaSobreMiFoto = () => {
         p-10
         rounded-[15px]
     ">
-        <img src="https://placehold.co/250x250.png" className="rounded-[130px]"/>
+        <img src="/yop.jpg" className="rounded-[130px] h-[250px] w-[250px]"/>
         <div className="
             max-w-[225px]
             max-h-[225px]

@@ -15,7 +15,6 @@ export const Form = () => {
   const [isValid, setIsValid] = useState(false);
 
   useEffect(() => {
-    // Validación básica: no campos vacíos y email contiene '@'
     const valid =
       formData.from_name.trim() !== '' &&
       formData.from_email.includes('@') &&

@@ -1,13 +1,12 @@
 import { Form } from "../components/composite/Form"
 import { TarjetaContacto } from "../components/composite/TarjetaContacto"
-import { Navbar } from "../components/layout/Navbar"
 
 export const Contact = () => {
   return (
      <div className="
           bg-primario-bglight
           h-lvh">
-           {/*  <Navbar/> */}
+           
             <div className="
                 max-w-[1140px]
                 mx-auto

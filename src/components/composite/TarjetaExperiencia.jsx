@@ -5,17 +5,17 @@ export const TarjetaExperiencia = ({ exp, isLast }) => {
   const { role, period, highlights, stackLogos } = exp;
 
   return (
-    /* contenedor del ítem del timeline */
+    
     <li className="relative flex gap-8 pl-12">
-      {/* círculo */}
+     
       <span className="absolute left-0 top-5 z-10 h-4 w-4 rounded-full bg-gray-300 ring-2 ring-white dark:bg-gray-600" />
 
-      {/* línea (solo si NO es el último elemento) */}
+     
       {!isLast && (
         <span className="absolute left-2 top-8 -bottom-20 w-px bg-gray-300 dark:bg-gray-600" />
       )}
 
-      {/* ------- contenido principal ------- */}
+     
       <div className="flex-1">
         <h2 className="font-inter font-medium text-btn text-text90 dark:text-gray-100">
           {role}
@@ -32,7 +32,7 @@ export const TarjetaExperiencia = ({ exp, isLast }) => {
         </ul>
       </div>
 
-      {/* ------- iconos de stack ------- */}
+
       <div className="grid grid-cols-2 gap-4 w-28 self-center content-start">
         {stackLogos.map((tech) => {
           const Icon = ICON_MAP[tech];

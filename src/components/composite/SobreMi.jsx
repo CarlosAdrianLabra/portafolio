@@ -15,7 +15,7 @@ export const SobreMi = () => {
             p-10"
     >
         <div>
-            <img src="https://placehold.co/260x310.png" className="rounded-[130px]"/>
+            <img src="/yop.jpg" className="rounded-[130px] h-[310px] w-[26ppx]"/>
         </div>
         <div className="
             max-w-[641px]
@@ -27,7 +27,7 @@ export const SobreMi = () => {
             <p className="
                 font-inter font-medium text-btn text-text90
             "
-            >Líder técnico y dev React con 3+ años lanzando productos web. Combino buenas prácticas de ingeniería con entregas rápidas, creando aplicaciones robustas, accesibles y orientadas a resultados de negocio.</p>
+            >Desarrollador web con más de 4 años lanzando productos web efectivos. Me enfoco en soluciones ágiles, escalables y centradas en el usuario, optimizando siempre calidad y velocidad.</p>
         </div>
 
     </div>

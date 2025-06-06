@@ -6,7 +6,7 @@ export const Projects = () => {
     <div className="
           bg-primario-bglight
           h-full">
-            {/* <Navbar/> */}
+
             <div className="
                 max-w-[1140px]
                 mx-auto

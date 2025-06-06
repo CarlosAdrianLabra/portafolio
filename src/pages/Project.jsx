@@ -1,10 +1,9 @@
 import { useParams, Navigate } from "react-router";
-import { Navbar } from "../components/layout/Navbar";
 import { Card } from "../components/ui/Card";
 import { ICON_MAP } from "../context/Icon-map";
 import projects from "../data/projects.json";
 
-/* ---------- helpers ---------- */
+
 const TechIcon = ({ tech }) => {
   const Icon = ICON_MAP[tech.toLowerCase()];
   return Icon ? (
@@ -85,12 +84,9 @@ export const Project = () => {
               <p>{problem}</p>
             </Card>
               
-
-              
             </div>
           </div>
 
-          {/* ---------- FILA 2 ---------- */}
           <div className="grid gap-6 sm:grid-cols-3 auto-rows-min items-start">
             <Card title="Responsabilidades">
               <ul className="list-disc list-inside space-y-1">
@@ -112,7 +108,6 @@ export const Project = () => {
               <p>{solution}</p>
             </Card>
 
-            {/* Tecnologías → ancho doble */}
             <Card title="Tecnologías" className="sm:col-span-2">
               <div className="flex flex-wrap justify-around gap-6 mt-2 grow mt-5 mb-2">
                 {technologies.map((t) => (

@@ -1,8 +1,6 @@
 import { Form } from "../components/composite/Form"
 import { SobreMi } from "../components/composite/SobreMi"
 import { TarjetaProyecto } from "../components/composite/TarjetaProyecto"
-import { TarjetaSobreMiFoto } from "../components/composite/TarjetaSobreMiFoto"
-import { Navbar } from "../components/layout/Navbar"
 import { Botones } from "../components/ui/Botones"
 import projects from "../data/projects.json";
 import { useMemo } from "react";

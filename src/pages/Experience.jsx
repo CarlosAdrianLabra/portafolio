@@ -1,5 +1,4 @@
 import { TarjetaExperiencia } from "../components/composite/TarjetaExperiencia"
-import { Navbar } from "../components/layout/Navbar"
 import { Botones } from "../components/ui/Botones"
 import experiences from "../data/experience.json";
 
@@ -7,7 +6,6 @@ import experiences from "../data/experience.json";
 export const Experience = () => {
   return (
     <div className="bg-primario-bglight min-h-screen">
-      {/* <Navbar /> */}
 
       <div className="max-w-[1140px] mx-auto pb-15 pt-10">
         <h1 className="font-inter font-semibold text-hero text-text90">
@@ -15,7 +13,7 @@ export const Experience = () => {
         </h1>
 
         <p className="font-inter text-tituloproyecto text-text90">
-          5+ años desempeñando roles en desarrollo web
+          5 años desempeñando roles en desarrollo web
         </p>
 
         {/* Tarjeta blanca que contiene TODO el timeline */}
