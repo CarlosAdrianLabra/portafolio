@@ -34,7 +34,7 @@ export const Experience = () => {
 
           {/* botón de descarga */}
           <div className="w-[217px] h-[60px] mx-auto mt-5">
-            <a href="/Carlos_Adrián_Labra_Granados_CV.pdf" download>
+            <a href="/Carlos_Adrián_Labra_CV.pdf" download>
               <Botones />
             </a>
           </div>

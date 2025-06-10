@@ -14,8 +14,8 @@ export const SobreMi = () => {
             items-center
             p-10"
     >
-        <div>
-            <img src="/yop.jpg" className="rounded-[130px] h-[310px] w-[26ppx]"/>
+        <div className="h-72 w-72 rounded-full overflow-hidden shrink-0">
+            <img src="/yop.png" className="h-full w-full object-cover object-top transform scale-110 -translate-y-4"/>
         </div>
         <div className="
             max-w-[641px]

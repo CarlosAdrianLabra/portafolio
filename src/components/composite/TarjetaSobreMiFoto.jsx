@@ -13,7 +13,9 @@ export const TarjetaSobreMiFoto = () => {
         p-10
         rounded-[15px]
     ">
-        <img src="/yop.jpg" className="rounded-[130px] h-[250px] w-[250px]"/>
+      <div className="h-52 w-52 rounded-full overflow-hidden shrink-0">
+         <img src="/yop.png" className="h-full w-full object-cover object-top transform scale-110 -translate-y-2"/>
+      </div>
         <div className="
             max-w-[225px]
             max-h-[225px]

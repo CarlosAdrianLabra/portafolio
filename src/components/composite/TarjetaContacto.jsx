@@ -16,7 +16,9 @@ export const TarjetaContacto = () => {
         <h1 className="
             font-inter font-medium text-tituloproyecto text-text90
         ">Contacto</h1>
-        <div className="
+        <a
+        href="mailto:carlosadrianlabragranados@gmail.com" 
+        className="
             flex flex-row gap-x-4
             justify-start items-center
         ">
@@ -24,7 +26,7 @@ export const TarjetaContacto = () => {
             <p className="
                 font-inter font-regular text-descripciondelproyecto text-text90
             ">carlosadrianlabragranados@gmail.com</p>
-        </div>
+        </a>
         {/* <div className="
             flex flex-row gap-x-4
             justify-start items-center
@@ -34,7 +36,11 @@ export const TarjetaContacto = () => {
                 font-inter font-regular text-descripciondelproyecto text-text90
             ">12 34 56 78 90</p>
         </div> */}
-        <div className="
+        <a 
+        href="https://github.com/CarlosAdrianLabra"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
             flex flex-row gap-x-4
             justify-start items-center
         ">
@@ -42,8 +48,12 @@ export const TarjetaContacto = () => {
             <p className="
                 font-inter font-regular text-descripciondelproyecto text-text90
             ">CarlosLabraGranados</p>
-        </div>
-        <div className="
+        </a>
+        <a 
+        href="https://www.linkedin.com/in/carlos-adri%C3%A1n-labra-granados/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
             flex flex-row gap-x-4
             justify-start items-center
         ">
@@ -51,7 +61,7 @@ export const TarjetaContacto = () => {
             <p className="
                 font-inter font-regular text-descripciondelproyecto text-text90
             ">Carlos Adrian Labra Granados</p>
-        </div>
+        </a>
     </div>
   )
 }
