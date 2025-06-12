@@ -6,28 +6,29 @@ export const About = () => {
   return (
      <div className="
               bg-primario-bglight
-              h-lvh">
+              min-h-screen">
                 <div className="
                     max-w-[1140px]
                     mx-auto
-                    pb-15
-                    pt-10">
+                    px-4 pb-15 pt-32">
                       <div className="
-                        grid
-                        grid-cols-2
-                        items-center
                         
+                        flex flex-col md:grid md:grid-cols-2
+                        gap-10 md:gap-0 
                       ">
                         <div className="
                           max-w-[605px]
                           
                         ">
+                          <header className="space-y-6">
                           <h1 className="
-                            font-inter font-semibold text-hero text-text90 mb-[10px]
+                            font-inter font-semibold 
+                        md:text-hero text-5xl sm:text-6xl text-text90
                           ">Sobre mi</h1>
                           <p className="
                             font-inter font-regular text-tituloproyecto text-text90 leading-10 mb-[25px]
                           ">Lider tecnico y desarrollador React con mas de 4 años de experiencia</p>
+                          </header>
                           <p className="
                             font-inter font-regular text-btn text-descripciondelproyecto text-text90 leading-7 mb-[25px]
                           ">Soy líder técnico y desarrollador Front-end especializado 
@@ -53,8 +54,8 @@ export const About = () => {
                           </div>
                         </div>
                         <div className="
-                          ml-25
-                          max-w-[478px]
+                          w-full max-w-md md:max-w-[478px]
+                          md:ml-24 
                         ">
                           <TarjetaSobreMiFoto/>
                         </div>

@@ -5,31 +5,34 @@ export const Contact = () => {
   return (
      <div className="
           bg-primario-bglight
-          h-lvh">
+          min-h-screen">
            
             <div className="
                 max-w-[1140px]
                 mx-auto
-                pb-15
-                pt-10">
-                <h1 className="
-                    font-inter font-semibold text-hero text-text90 
-                ">Trabajemos juntos.</h1>
-                <p className="
-                    font-inter font-regular text-tituloproyecto text-text90
-                ">Pongamonos en contacto</p>
+                px-4 pb-15 pt-32">
+                     <header className="space-y-6">
+                         <h1 className="
+                            font-inter font-semibold 
+                        md:text-hero text-5xl sm:text-6xl text-text90
+                         ">Trabajemos juntos.</h1>
+                         <p className="
+                             font-inter font-regular md:text-tituloproyecto text-text90 text-xl sm:text-2xl
+                         ">Pongamonos en contacto</p>
+                     </header>
                 <div className="
-                grid
-                grid-cols-2
                 mt-10
+                     grid gap-8
+                     md:grid-cols-2
+                     items-start
             ">
                 <div className="
-                        max-w-[450px]
+                        w-full max-w-md md:max-w-none
                 ">
                     <Form/>
                 </div>
                 <div className="
-                    max-w-[510px]">
+                    w-full max-w-md md:max-w-none">
                     <TarjetaContacto/>
                 </div>
             </div>

@@ -55,23 +55,23 @@ export const Project = () => {
     <div className="bg-primario-bglight min-h-screen">
   
 
-      <div className="max-w-[1140px] mx-auto pt-10 pb-15">
-     
-        <h1 className="font-inter font-semibold text-hero text-text90">
+      <div className="max-w-[1140px]
+                mx-auto
+                px-4 pb-15 pt-32">
+      <header className="space-y-6">
+        <h1 className="font-inter font-semibold 
+                        md:text-hero text-5xl sm:text-6xl text-text90 ">
           {title}
         </h1>
-        <p className="font-inter text-tituloproyecto text-text90">{short}</p>
+        <p className="font-inter font-regular md:text-tituloproyecto text-text90 text-xl sm:text-2xl">{short}</p>
+      </header>
 
-     
-        <div className="mt-10 space-y-6">
-       
-          <div className="grid gap-6 sm:grid-cols-3 auto-rows-min items-start">
-         
-            <div className="sm:col-span-2 h-[300px] md:h-[400px] lg:h-[500px]">
-              <Hero />
-            </div>
+      <div className="mt-10 space-y-6">
+        <div className="grid gap-6 sm:grid-cols-3 auto-rows-min items-start">
+          <div className="sm:col-span-2 h-[300px] md:h-[400px] lg:h-[500px]">
+            <Hero />
+          </div>
 
-           
             <div className="flex flex-col gap-6">
               <Card title="Métricas clave">
                 <ul className="list-disc list-inside space-y-1">

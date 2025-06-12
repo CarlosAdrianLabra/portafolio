@@ -1,4 +1,5 @@
-import { Github, Linkedin, LinkedinIcon, Mail, Phone } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 
 export const TarjetaContacto = () => {
@@ -6,12 +7,14 @@ export const TarjetaContacto = () => {
     <div className="
         bg-white
         shadow-lg
-        max-w-[528px]
+        w-full 
+        max-w-md md:max-w-[528px]
         max-h-[401px]
         rounded-[15px]
-        justify-items-start
+        px-6 py-8 sm:px-8 sm:py-10
         p-10
         grid grid-cols-1 gap-y-4
+        space-y-4 
     ">
         <h1 className="
             font-inter font-medium text-tituloproyecto text-text90
@@ -19,12 +22,11 @@ export const TarjetaContacto = () => {
         <a
         href="mailto:carlosadrianlabragranados@gmail.com" 
         className="
-            flex flex-row gap-x-4
-            justify-start items-center
+            flex items-center gap-3 group 
         ">
-           <Mail className="w-[50px] h-[50px] text-text90"/>
+           <Mail className="md:w-[50px] md:h-[50px] w-6 h-6 sm:w-7 sm:h-7 text-text90"/>
             <p className="
-                font-inter font-regular text-descripciondelproyecto text-text90
+                font-inter font-regular md:text-descripciondelproyecto text-text90
             ">carlosadrianlabragranados@gmail.com</p>
         </a>
         {/* <div className="
@@ -44,9 +46,9 @@ export const TarjetaContacto = () => {
             flex flex-row gap-x-4
             justify-start items-center
         ">
-            <Github className="w-[50px] h-[50px] text-text90"/>
+            <FaGithub className="md:w-[50px] md:h-[50px] w-6 h-6 sm:w-7 sm:h-7 text-text90"/>
             <p className="
-                font-inter font-regular text-descripciondelproyecto text-text90
+                font-inter font-regular md:text-descripciondelproyecto text-text90
             ">CarlosLabraGranados</p>
         </a>
         <a 
@@ -57,9 +59,9 @@ export const TarjetaContacto = () => {
             flex flex-row gap-x-4
             justify-start items-center
         ">
-            <Linkedin className="w-[50px] h-[50px] text-text90"/>
+            <FaLinkedin className="md:w-[50px] md:h-[50px] w-6 h-6 sm:w-7 sm:h-7 text-text90"/>
             <p className="
-                font-inter font-regular text-descripciondelproyecto text-text90
+                font-inter font-regular md:text-descripciondelproyecto text-text90
             ">Carlos Adrian Labra Granados</p>
         </a>
     </div>

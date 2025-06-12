@@ -7,14 +7,19 @@ export const Experience = () => {
   return (
     <div className="bg-primario-bglight min-h-screen">
 
-      <div className="max-w-[1140px] mx-auto pb-15 pt-10">
-        <h1 className="font-inter font-semibold text-hero text-text90">
+      <div className="max-w-[1140px]
+                mx-auto
+                px-4 pb-15 pt-32">
+        <header className="space-y-4">
+        <h1 className="font-inter font-semibold 
+                        md:text-hero text-5xl sm:text-6xl text-text90">
           Mi experiencia.
         </h1>
 
-        <p className="font-inter text-tituloproyecto text-text90">
+        <p className="font-inter font-regular md:text-tituloproyecto text-text90 text-xl sm:text-2xl">
           5 años desempeñando roles en desarrollo web
         </p>
+        </header>
 
         {/* Tarjeta blanca que contiene TODO el timeline */}
         <div className="
